@@ -30,13 +30,18 @@
 
 <!-- =================  YOUR ENTRIES BELOW  ================= -->
 
-### Week 1 — YYYY-MM-DD
+### Week 1 — 2026/6/8-2026/6/12
 
 **Attended this week's meeting:** Yes 
 
 **Progress this week**
 1. Created FURP repository following the official template rules.
-2. Selected R2R / Matterport path for classic VLN research, matched with my research direction.
+2.
+Chosen path:
+R2R / Matterport path (classic VLN reproduction)
+Reason:
+This path focuses on classic Vision-and-Language Navigation tasks, which matches my research direction. It has complete documents and abundant reference materials, making it the most suitable starting point for learning and baseline reproduction in the early stage. I will not install other frameworks for now as required.
+
 3. Built Python virtual environment and installed basic dependencies.
 4. Finished smoke test to verify the running environment.
 
