@@ -48,6 +48,7 @@
 1. Read papers and documents related to R2R and Matterport VLN tasks.
 2. Learn the basic structure of simulator and dataset.
 3. Try to run simple VLN baseline code.
+
 **Hours spent (optional):**
 
 **Links (optional):**
