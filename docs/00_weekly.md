@@ -41,11 +41,13 @@
 4. Finished smoke test to verify the running environment.
 
 **Challenges & blockers**
-- _..._
+1. Mistakenly created a regular repository at first, then recreated repository with the given template as required.
+2. No critical errors in basic environment deployment. This device has no independent GPU, and will use CPU mode for subsequent experiments.
 
 **Next steps**
-- _..._
-
+1. Read papers and documents related to R2R and Matterport VLN tasks.
+2. Learn the basic structure of simulator and dataset.
+3. Try to run simple VLN baseline code.
 **Hours spent (optional):**
 
 **Links (optional):**
