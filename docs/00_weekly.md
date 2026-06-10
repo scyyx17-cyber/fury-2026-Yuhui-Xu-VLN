@@ -37,12 +37,35 @@
 **Progress this week**
 1. Created FURP repository following the official template rules.
 
-2. Chosen path:R2R / Matterport path (classic VLN reproduction)
-
-Reason:This path focuses on classic Vision-and-Language Navigation tasks, which matches my research direction. It has complete documents and abundant reference materials, making it the most suitable starting point for learning and baseline reproduction in the early stage. I will not install other frameworks for now as required.
+2. Chosen path: R2R / Matterport path (classic VLN reproduction)
+   Reason: This path focuses on classic Vision-and-Language Navigation tasks, which matches my research direction. It has complete documents and abundant reference materials, making it the most suitable starting point for learning and baseline reproduction in the early stage. I will not install other frameworks for now as required.
 
 3. Built Python virtual environment and installed basic dependencies.
+
+#### Environment Information
+- Operating System: macOS 26.3.1 (Build 25D2128)
+- Python Version: 3.13.13
+- CUDA / GPU: Unavailable (CPU-only)
+- Package Manager: pip
+- Repository Commit Hash: 050b3d7
+
+#### Installation Commands
+python3 -m venv venv
+source venv/bin/activate
+pip install numpy
+
 4. Finished smoke test to verify the running environment.
+
+#### Smoke Test Commands
+python3 -c "import numpy; print('✅ NumPy is working')"
+python3 -c "print('✅ VLN baseline smoke test passed')"
+
+#### Terminal Output
+✅ NumPy is working
+✅ VLN baseline smoke test passed
+
+#### Test Result
+Basic environment runs normally, smoke test passed.
 
 **Challenges & blockers**
 1. Mistakenly created a regular repository at first, then recreated repository with the given template as required.
