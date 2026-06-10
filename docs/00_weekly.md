@@ -36,11 +36,9 @@
 
 **Progress this week**
 1. Created FURP repository following the official template rules.
-2.
-Chosen path:
-R2R / Matterport path (classic VLN reproduction)
-Reason:
-This path focuses on classic Vision-and-Language Navigation tasks, which matches my research direction. It has complete documents and abundant reference materials, making it the most suitable starting point for learning and baseline reproduction in the early stage. I will not install other frameworks for now as required.
+2.Chosen path:R2R / Matterport path (classic VLN reproduction)
+
+Reason:This path focuses on classic Vision-and-Language Navigation tasks, which matches my research direction. It has complete documents and abundant reference materials, making it the most suitable starting point for learning and baseline reproduction in the early stage. I will not install other frameworks for now as required.
 
 3. Built Python virtual environment and installed basic dependencies.
 4. Finished smoke test to verify the running environment.
