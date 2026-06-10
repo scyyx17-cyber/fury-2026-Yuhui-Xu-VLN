@@ -32,11 +32,13 @@
 
 ### Week 1 — YYYY-MM-DD
 
-**Attended this week's meeting:** Yes / No
+**Attended this week's meeting:** Yes 
 
 **Progress this week**
-- Set up repository from the FURP template.
-- _..._
+1. Created FURP repository following the official template rules.
+2. Selected R2R / Matterport path for classic VLN research, matched with my research direction.
+3. Built Python virtual environment and installed basic dependencies.
+4. Finished smoke test to verify the running environment.
 
 **Challenges & blockers**
 - _..._
