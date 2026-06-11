@@ -58,10 +58,12 @@ pip install numpy
 
 #### Smoke Test Commands
 python3 -c "import numpy; print('✅ NumPy is working')"
+
 python3 -c "print('✅ VLN baseline smoke test passed')"
 
 #### Terminal Output
 ✅ NumPy is working
+
 ✅ VLN baseline smoke test passed
 
 #### Test Result
