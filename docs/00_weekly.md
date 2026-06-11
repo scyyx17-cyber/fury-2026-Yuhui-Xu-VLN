@@ -79,7 +79,8 @@ print('✅ Ready to load navigation datasets and simulator in follow-up work')
 ✅ Runtime environment initialized successfully
 ✅ Basic libraries for data processing are available
 ✅ Ready to load navigation datasets and simulator in follow-up work
-- ![Uploading image.png…]()
+- <img width="1210" height="1122" alt="image" src="https://github.com/user-attachments/assets/1ec628d4-afbe-4327-8578-0a1cfe1cd585" />
+
 
 - Test result: The isolated operating environment works correctly. The whole stack can execute custom code stably, and the smoke test is passed.
 
