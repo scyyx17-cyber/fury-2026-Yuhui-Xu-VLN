@@ -45,9 +45,13 @@
 #### Environment Information
 - Operating System: macOS 26.3.1 (Build 25D2128)
 - Python Version: 3.13.13
-- CUDA / GPU: Unavailable (CPU-only)
-- Package Manager: pip
+- CUDA / GPU availability: Unavailable, all tasks will run under CPU mode
+- Package manager: pip
 - Repository Commit Hash: 050b3d7
+- Exact installation commands:
+  - python3 -m venv venv
+  - source venv/bin/activate
+  - pip install numpy
 
 #### Installation Commands
 python3 -m venv venv
