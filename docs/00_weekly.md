@@ -96,3 +96,88 @@ print('✅ Ready to load navigation datasets and simulator in follow-up work')
 **Hours spent (optional):**
 
 **Links (optional):**
+
+
+
+
+
+### Week 2 — Literature Review of VLN & AMR Navigation
+**Attended this week's meeting:** Yes
+
+## Step 1: Literature Research Scope Definition
+This week’s core task is literature study, which lays the theoretical foundation for replicating VLN baselines and deploying algorithms on physical AMR robots in the following weeks.
+I followed the recommended reading list from the project repo, focusing on three research directions:
+1. Foundational classic papers of Vision-and-Language Navigation (VLN), including the original R2R benchmark and Matterport3D simulator work.
+2. Research bridging simulated VLN tasks and real-world Autonomous Mobile Robots (AMR).
+3. Existing methods solving the gap between discrete simulated navigation and continuous robot motion control.
+
+## Step 2: Structured Reading Notes of Core Papers
+### Literature Note 1: Vision-and-Language Navigation (CVPR 2018)
+1. Basic Information
+Title: Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments
+Conference: CVPR 2018
+Core contribution: Proposed the R2R dataset, the most standard benchmark for VLN, built on Matterport3D real indoor scanned scenes.
+2. Research Background
+Previous robot navigation only relied on pre-built coordinate maps, unable to understand open-ended natural language guidance from humans. There was no photorealistic 3D environment to train language-guided embodied agents.
+3. End-to-End Pipeline
+Human language instruction → text encoder → panoramic visual feature extraction → cross-modal matching module → discrete viewpoint selection policy
+4. Standard Evaluation Metrics
+- SR (Success Rate): The proportion of agents reaching the target position within limited steps
+- SPL (Success weighted by Path Length): Comprehensive index balancing navigation success and path efficiency
+5. Limitations & Research Gap for My AMR Project
+- The agent moves by discrete viewpoint teleportation, not continuous wheeled motion matching real AMR hardware.
+- All experiments are limited to simulation environments, without deployment on physical mobile robots.
+- No optimization for low-computing embedded devices carried by AMRs.
+6. Inspiration
+My subsequent work needs to transform discrete navigation policies into continuous motion commands suitable for differential-drive AMRs, and explore simulation-to-real transfer strategies.
+
+### Literature Note 2: Bridging Discrete & Continuous Environments for VLN (CVPR 2022)
+1. Basic Information
+Title: Bridging the Gap Between Learning in Discrete and Continuous Environments for Vision-and-Language Navigation
+Conference: CVPR 2022
+2. Core Problem
+Classic R2R VLN uses discrete graph nodes, while physical AMR robots run continuous space motion control; direct migration leads to navigation failure.
+3. Key Solution
+Propose a two-stage mapping module: first predict target viewpoints as in discrete simulation, then convert viewpoint offset into smooth continuous velocity commands for robots.
+4. Gap for My Project
+The conversion module still requires powerful GPU support, lacking lightweight optimization for low-power AMR on-board chips.
+
+### Literature Note 3: LM-Nav: Robotic Navigation with Large Pre-Trained Multimodal Models (CoRL 2022)
+1. Basic Information
+Conference: CoRL 2022
+Core value: One of the representative works deploying VLN algorithms on real wheeled mobile robots.
+2. Core Workflow
+Pre-train vision-language foundation model in simulation, then fine-tune with small real-world robot datasets to reduce sim-real domain shift.
+3. Practical Defects
+Large multimodal models bring high latency, cannot meet real-time navigation requirements of small AMRs.
+
+## Step 3: VLN-AMR End-to-End Conceptual Diagram
+I drew a complete pipeline diagram to visualize the full workflow from human language input to AMR movement output, and marked core research gaps to be solved in this project.
+Workflow chain:
+Human natural language navigation instruction → Text Language Encoder → Cross-Modal Vision-Language Fusion Module → AMR on-board RGB camera visual observation → Navigation Path Planner → Continuous motion controller for AMR differential drive chassis
+
+Two core gaps marked in the diagram:
+1. Gap 1: Most baseline VLN only supports discrete viewpoint jump, without continuous motion output adapted to AMR.
+2. Gap 2: Mainstream VLN models are only verified in simulation, lacking lightweight deployment schemes for physical mobile robots.
+
+<!-- Paste your concept diagram screenshot here, GitHub auto-generates image link -->
+<img width="1817" height="1644" alt="image" src="https://github.com/user-attachments/assets/91a0f6c0-02f7-4f31-83a8-7e6658b3df57" />
+
+## Step 4: Blockers & Difficulties Encountered
+1. Difficulty: It was hard to distinguish simulation-only VLN papers from research applicable to physical AMR robots at the early reading stage.
+   Solution: Filter papers by keywords "mobile robot", "sim-to-real", "embodied real robot navigation" to screen targeted literature.
+2. Hardware & Computing Status: All literature reading, note sorting and diagram drawing work are completed locally on macOS. No GPU or Linux server is required this week.
+3. Preparation for follow-up work: I have contacted the supervisor to apply for the lab’s bare-metal Linux GPU server, to support baseline replication and simulator experiments starting from Week 3.
+
+## Challenges & Blockers Summary
+- Theoretical challenge: Need to further sort out sim-real domain adaptation methods for VLN-AMR.
+- No local hardware bottlenecks this week; computing pressure will appear starting Week 3.
+
+## Next Steps (Week 3 Deliverables)
+1. Pull the official VLN baseline code repository and complete full local environment configuration.
+2. Record all installation, test and running commands as command logs (required deliverable).
+3. Synchronize the complete baseline code to the lab Linux GPU server, and run verification to obtain standard evaluation indicators.
+
+**Hours spent (optional):**
+
+**Links (optional):**
