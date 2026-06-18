@@ -167,7 +167,7 @@ Two core gaps marked in the diagram:
 1. Difficulty: It was hard to distinguish simulation-only VLN papers from research applicable to physical AMR robots at the early reading stage.
    Solution: Filter papers by keywords "mobile robot", "sim-to-real", "embodied real robot navigation" to screen targeted literature.
 2. Hardware & Computing Status: All literature reading, note sorting and diagram drawing work are completed locally on macOS. No GPU or Linux server is required this week.
-3. Preparation for follow-up work: I have contacted the supervisor to apply for the lab’s bare-metal Linux GPU server, to support baseline replication and simulator experiments starting from Week 3.
+
 
 ## Challenges & Blockers Summary
 - Theoretical challenge: Need to further sort out sim-real domain adaptation methods for VLN-AMR.
