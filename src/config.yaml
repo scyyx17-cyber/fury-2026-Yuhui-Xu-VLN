@@ -1,0 +1,30 @@
+# Training configuration for VLN Seq2Seq baseline
+
+data:
+  r2r_data_path: "data/R2R"
+  scene_data_path: "data/scene_datasets"
+  train_split: "train"
+  val_seen_split: "val_seen"
+  val_unseen_split: "val_unseen"
+  max_train_episodes: 2000
+
+model:
+  visual_encoder: "resnet50"
+  visual_feature_dim: 2048
+  language_hidden_dim: 256
+  policy_hidden_dim: 512
+  action_history_dim: 32
+  action_history_length: 3
+  use_action_history: true
+
+training:
+  batch_size: 4
+  learning_rate: 0.0001
+  optimizer: "adam"
+  epochs: 5
+  teacher_forcing: true
+  gpu: 0
+
+evaluation:
+  metrics: ["NE", "SR", "SPL", "TL"]
+  success_distance: 3.0
