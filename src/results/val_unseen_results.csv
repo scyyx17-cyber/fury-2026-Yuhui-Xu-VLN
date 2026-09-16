@@ -1,0 +1,5 @@
+Method,NE,SR,SPL,TL
+Random,9.8,0.0,0.0,12.5
+Seq2Seq (LSTM),8.2,0.024,1.8,11.3
+Seq2Seq (GRU),7.9,0.031,2.2,10.8
+VLN-BERT (partial),9.1,0.008,0.5,13.2
